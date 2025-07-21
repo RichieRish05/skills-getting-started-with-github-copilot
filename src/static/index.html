@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mergington High School Activities</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Add visual styling for participants section directly in HTML for clarity */
+      .participants-section {
+        margin-top: 1em;
+        background: #f0f4f8;
+        padding: 0.75em;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+      }
+      .participants-section strong {
+        display: block;
+        margin-bottom: 0.5em;
+        color: #2a4d7c;
+        font-size: 1.05em;
+      }
+      .participants-section ul {
+        margin: 0.5em 0 0 1em;
+        padding: 0;
+      }
+      .participants-section li {
+        font-size: 0.98em;
+        color: #333;
+        margin-bottom: 0.25em;
+        list-style-type: disc;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -18,6 +44,14 @@
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
+          <!-- Example legend for clarity -->
+          <div class="participants-section">
+            <strong>Participants:</strong>
+            <ul>
+              <li>alice@mergington.edu</li>
+              <li>bob@mergington.edu</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -26,7 +60,12 @@
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="your-email@mergington.edu"
+            />
           </div>
           <div class="form-group">
             <label for="activity">Select Activity:</label>
